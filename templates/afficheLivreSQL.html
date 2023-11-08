@@ -1,0 +1,17 @@
+<h1>Table Livres</h1>
+<table border=1px style='border: black; border-collapse: collapse'>
+<tr>
+	<th>ID</th>
+	<th>Titre</th>
+	<th>Date de publication</th>
+</tr>
+{% for livre in livres %}
+	<tr>
+		<td>{{livre[0]}}</td>
+		<td>{{livre[1]}}</td>
+		<td>{{livre[2]}}</td>
+	</tr>
+{% endfor %}
+</table>
+
+<a href="/add">Ajouter un livre</a>

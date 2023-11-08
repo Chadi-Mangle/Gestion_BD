@@ -23,7 +23,5 @@ def add_values_sql():
     return render_template("formLivreSQL.html")
 
 if __name__ == '__main__':
-    try: 
-        app.run(host='localhost', port=81, debug=True)
-    except:
-        database.terminerConnection()
+    app.run(host='localhost', port=81, debug=True)
+
